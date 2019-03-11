@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		209CE96022362D2A00075F0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE95F22362D2A00075F0D /* AppDelegate.m */; };
+		209CE96322362D2A00075F0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE96222362D2A00075F0D /* ViewController.m */; };
+		209CE96622362D2A00075F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209CE96422362D2A00075F0D /* Main.storyboard */; };
+		209CE96822362D2C00075F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209CE96722362D2C00075F0D /* Assets.xcassets */; };
+		209CE96B22362D2C00075F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209CE96922362D2C00075F0D /* LaunchScreen.storyboard */; };
+		209CE96E22362D2C00075F0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE96D22362D2C00075F0D /* main.m */; };
+		209CE97822362D2C00075F0D /* SCDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE97722362D2C00075F0D /* SCDownloaderTests.m */; };
+		209CE98322362D2C00075F0D /* SCDownloaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE98222362D2C00075F0D /* SCDownloaderUITests.m */; };
+		209CE99322362E3500075F0D /* SCDownloadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE99222362E3500075F0D /* SCDownloadHelper.m */; };
+		209CE9952236351400075F0D /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 209CE9942236351300075F0D /* test.json */; };
+		209CE9992236374300075F0D /* SCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE9972236374300075F0D /* SCTableViewCell.m */; };
+		209CE99A2236374300075F0D /* SCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209CE9982236374300075F0D /* SCTableViewCell.xib */; };
+		209CE9A122363D3F00075F0D /* SCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE9A022363D3F00075F0D /* SCDataModel.m */; };
+		510CA2E63890D062971CD392 /* libPods-SCDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1687EB2F85D1A54718690257 /* libPods-SCDownloader.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		209CE97422362D2C00075F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209CE95322362D2A00075F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 209CE95A22362D2A00075F0D;
+			remoteInfo = SCDownloader;
+		};
+		209CE97F22362D2C00075F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 209CE95322362D2A00075F0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 209CE95A22362D2A00075F0D;
+			remoteInfo = SCDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1687EB2F85D1A54718690257 /* libPods-SCDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		209CE95B22362D2A00075F0D /* SCDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		209CE95E22362D2A00075F0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		209CE95F22362D2A00075F0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		209CE96122362D2A00075F0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		209CE96222362D2A00075F0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		209CE96522362D2A00075F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		209CE96722362D2C00075F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		209CE96A22362D2C00075F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		209CE96C22362D2C00075F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209CE96D22362D2C00075F0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		209CE97322362D2C00075F0D /* SCDownloaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCDownloaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		209CE97722362D2C00075F0D /* SCDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDownloaderTests.m; sourceTree = "<group>"; };
+		209CE97922362D2C00075F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209CE97E22362D2C00075F0D /* SCDownloaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCDownloaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		209CE98222362D2C00075F0D /* SCDownloaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDownloaderUITests.m; sourceTree = "<group>"; };
+		209CE98422362D2C00075F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209CE99122362E3500075F0D /* SCDownloadHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDownloadHelper.h; sourceTree = "<group>"; };
+		209CE99222362E3500075F0D /* SCDownloadHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDownloadHelper.m; sourceTree = "<group>"; };
+		209CE9942236351300075F0D /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		209CE9962236374300075F0D /* SCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTableViewCell.h; sourceTree = "<group>"; };
+		209CE9972236374300075F0D /* SCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableViewCell.m; sourceTree = "<group>"; };
+		209CE9982236374300075F0D /* SCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCTableViewCell.xib; sourceTree = "<group>"; };
+		209CE99F22363D3F00075F0D /* SCDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDataModel.h; sourceTree = "<group>"; };
+		209CE9A022363D3F00075F0D /* SCDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDataModel.m; sourceTree = "<group>"; };
+		468BE2C7ECA2D43AA8BB07C8 /* Pods-SCDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCDownloader/Pods-SCDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		F9BAA3D288979EB730124FB3 /* Pods-SCDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCDownloader/Pods-SCDownloader.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		209CE95822362D2A00075F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				510CA2E63890D062971CD392 /* libPods-SCDownloader.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209CE97022362D2C00075F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209CE97B22362D2C00075F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09EC780599BA9065FC4177F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1687EB2F85D1A54718690257 /* libPods-SCDownloader.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		209CE95222362D2A00075F0D = {
+			isa = PBXGroup;
+			children = (
+				209CE95D22362D2A00075F0D /* SCDownloader */,
+				209CE97622362D2C00075F0D /* SCDownloaderTests */,
+				209CE98122362D2C00075F0D /* SCDownloaderUITests */,
+				209CE95C22362D2A00075F0D /* Products */,
+				898AF672BEDFBD55AF4826C5 /* Pods */,
+				09EC780599BA9065FC4177F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		209CE95C22362D2A00075F0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				209CE95B22362D2A00075F0D /* SCDownloader.app */,
+				209CE97322362D2C00075F0D /* SCDownloaderTests.xctest */,
+				209CE97E22362D2C00075F0D /* SCDownloaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		209CE95D22362D2A00075F0D /* SCDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				209CE99022362DFE00075F0D /* SCDownloader */,
+				209CE99E22363CF300075F0D /* MainClass */,
+				209CE95E22362D2A00075F0D /* AppDelegate.h */,
+				209CE95F22362D2A00075F0D /* AppDelegate.m */,
+				209CE96422362D2A00075F0D /* Main.storyboard */,
+				209CE96722362D2C00075F0D /* Assets.xcassets */,
+				209CE96922362D2C00075F0D /* LaunchScreen.storyboard */,
+				209CE9942236351300075F0D /* test.json */,
+				209CE96C22362D2C00075F0D /* Info.plist */,
+				209CE96D22362D2C00075F0D /* main.m */,
+			);
+			path = SCDownloader;
+			sourceTree = "<group>";
+		};
+		209CE97622362D2C00075F0D /* SCDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				209CE97722362D2C00075F0D /* SCDownloaderTests.m */,
+				209CE97922362D2C00075F0D /* Info.plist */,
+			);
+			path = SCDownloaderTests;
+			sourceTree = "<group>";
+		};
+		209CE98122362D2C00075F0D /* SCDownloaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				209CE98222362D2C00075F0D /* SCDownloaderUITests.m */,
+				209CE98422362D2C00075F0D /* Info.plist */,
+			);
+			path = SCDownloaderUITests;
+			sourceTree = "<group>";
+		};
+		209CE99022362DFE00075F0D /* SCDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				209CE99122362E3500075F0D /* SCDownloadHelper.h */,
+				209CE99222362E3500075F0D /* SCDownloadHelper.m */,
+			);
+			path = SCDownloader;
+			sourceTree = "<group>";
+		};
+		209CE99E22363CF300075F0D /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+				209CE99F22363D3F00075F0D /* SCDataModel.h */,
+				209CE9A022363D3F00075F0D /* SCDataModel.m */,
+				209CE96122362D2A00075F0D /* ViewController.h */,
+				209CE96222362D2A00075F0D /* ViewController.m */,
+				209CE9962236374300075F0D /* SCTableViewCell.h */,
+				209CE9972236374300075F0D /* SCTableViewCell.m */,
+				209CE9982236374300075F0D /* SCTableViewCell.xib */,
+			);
+			path = MainClass;
+			sourceTree = "<group>";
+		};
+		898AF672BEDFBD55AF4826C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				468BE2C7ECA2D43AA8BB07C8 /* Pods-SCDownloader.debug.xcconfig */,
+				F9BAA3D288979EB730124FB3 /* Pods-SCDownloader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		209CE95A22362D2A00075F0D /* SCDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209CE98722362D2C00075F0D /* Build configuration list for PBXNativeTarget "SCDownloader" */;
+			buildPhases = (
+				20C50CD1038BE09CD9083372 /* [CP] Check Pods Manifest.lock */,
+				209CE95722362D2A00075F0D /* Sources */,
+				209CE95822362D2A00075F0D /* Frameworks */,
+				209CE95922362D2A00075F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCDownloader;
+			productName = SCDownloader;
+			productReference = 209CE95B22362D2A00075F0D /* SCDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		209CE97222362D2C00075F0D /* SCDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209CE98A22362D2C00075F0D /* Build configuration list for PBXNativeTarget "SCDownloaderTests" */;
+			buildPhases = (
+				209CE96F22362D2C00075F0D /* Sources */,
+				209CE97022362D2C00075F0D /* Frameworks */,
+				209CE97122362D2C00075F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				209CE97522362D2C00075F0D /* PBXTargetDependency */,
+			);
+			name = SCDownloaderTests;
+			productName = SCDownloaderTests;
+			productReference = 209CE97322362D2C00075F0D /* SCDownloaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		209CE97D22362D2C00075F0D /* SCDownloaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 209CE98D22362D2C00075F0D /* Build configuration list for PBXNativeTarget "SCDownloaderUITests" */;
+			buildPhases = (
+				209CE97A22362D2C00075F0D /* Sources */,
+				209CE97B22362D2C00075F0D /* Frameworks */,
+				209CE97C22362D2C00075F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				209CE98022362D2C00075F0D /* PBXTargetDependency */,
+			);
+			name = SCDownloaderUITests;
+			productName = SCDownloaderUITests;
+			productReference = 209CE97E22362D2C00075F0D /* SCDownloaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		209CE95322362D2A00075F0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = suychen;
+				TargetAttributes = {
+					209CE95A22362D2A00075F0D = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					209CE97222362D2C00075F0D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 209CE95A22362D2A00075F0D;
+					};
+					209CE97D22362D2C00075F0D = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 209CE95A22362D2A00075F0D;
+					};
+				};
+			};
+			buildConfigurationList = 209CE95622362D2A00075F0D /* Build configuration list for PBXProject "SCDownloader" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 209CE95222362D2A00075F0D;
+			productRefGroup = 209CE95C22362D2A00075F0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				209CE95A22362D2A00075F0D /* SCDownloader */,
+				209CE97222362D2C00075F0D /* SCDownloaderTests */,
+				209CE97D22362D2C00075F0D /* SCDownloaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		209CE95922362D2A00075F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209CE99A2236374300075F0D /* SCTableViewCell.xib in Resources */,
+				209CE96B22362D2C00075F0D /* LaunchScreen.storyboard in Resources */,
+				209CE9952236351400075F0D /* test.json in Resources */,
+				209CE96822362D2C00075F0D /* Assets.xcassets in Resources */,
+				209CE96622362D2A00075F0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209CE97122362D2C00075F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209CE97C22362D2C00075F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20C50CD1038BE09CD9083372 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCDownloader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		209CE95722362D2A00075F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209CE96322362D2A00075F0D /* ViewController.m in Sources */,
+				209CE96E22362D2C00075F0D /* main.m in Sources */,
+				209CE9992236374300075F0D /* SCTableViewCell.m in Sources */,
+				209CE96022362D2A00075F0D /* AppDelegate.m in Sources */,
+				209CE99322362E3500075F0D /* SCDownloadHelper.m in Sources */,
+				209CE9A122363D3F00075F0D /* SCDataModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209CE96F22362D2C00075F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209CE97822362D2C00075F0D /* SCDownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		209CE97A22362D2C00075F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				209CE98322362D2C00075F0D /* SCDownloaderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		209CE97522362D2C00075F0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 209CE95A22362D2A00075F0D /* SCDownloader */;
+			targetProxy = 209CE97422362D2C00075F0D /* PBXContainerItemProxy */;
+		};
+		209CE98022362D2C00075F0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 209CE95A22362D2A00075F0D /* SCDownloader */;
+			targetProxy = 209CE97F22362D2C00075F0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		209CE96422362D2A00075F0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209CE96522362D2A00075F0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		209CE96922362D2C00075F0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				209CE96A22362D2C00075F0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		209CE98522362D2C00075F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		209CE98622362D2C00075F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		209CE98822362D2C00075F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 468BE2C7ECA2D43AA8BB07C8 /* Pods-SCDownloader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SCDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		209CE98922362D2C00075F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9BAA3D288979EB730124FB3 /* Pods-SCDownloader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCDownloader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SCDownloader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		209CE98B22362D2C00075F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SCDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCDownloader.app/SCDownloader";
+			};
+			name = Debug;
+		};
+		209CE98C22362D2C00075F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCDownloaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SCDownloaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCDownloader.app/SCDownloader";
+			};
+			name = Release;
+		};
+		209CE98E22362D2C00075F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SCDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SCDownloader;
+			};
+			name = Debug;
+		};
+		209CE98F22362D2C00075F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SCDownloaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.suychen.SCDownloaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SCDownloader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		209CE95622362D2A00075F0D /* Build configuration list for PBXProject "SCDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209CE98522362D2C00075F0D /* Debug */,
+				209CE98622362D2C00075F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209CE98722362D2C00075F0D /* Build configuration list for PBXNativeTarget "SCDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209CE98822362D2C00075F0D /* Debug */,
+				209CE98922362D2C00075F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209CE98A22362D2C00075F0D /* Build configuration list for PBXNativeTarget "SCDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209CE98B22362D2C00075F0D /* Debug */,
+				209CE98C22362D2C00075F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		209CE98D22362D2C00075F0D /* Build configuration list for PBXNativeTarget "SCDownloaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209CE98E22362D2C00075F0D /* Debug */,
+				209CE98F22362D2C00075F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 209CE95322362D2A00075F0D /* Project object */;
+}
