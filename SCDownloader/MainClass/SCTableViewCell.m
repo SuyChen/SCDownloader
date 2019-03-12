@@ -64,6 +64,7 @@
         } success:^(id  _Nonnull responseObject) {
             
             self.dataModel.status = SCDownloadStatusFinished;
+            [self updateLocalDataWithModel:self.dataModel];
             dispatch_async(dispatch_get_main_queue(), ^{
                 
                 [self.download_btn setImage:nil forState:UIControlStateNormal];

@@ -20,16 +20,14 @@ static NSString * const kSessionIndentifier = @"download";
  */
 @property (nonatomic, strong) AFHTTPSessionManager *requestManager;
 /**
- 下载历史记录 key:URL value:resumeData ps:key只要是惟一的标识符就好
+ 下载历史记录 key:URL value:dataModel ps:key只要是惟一的标识符就好
  */
 @property (nonatomic,strong) NSMutableDictionary *downLoadHistoryDictionary;
 
 /**
- 保存任务和模型的task key:URL value:@{@"":@""} ps:key只要是惟一的标识符就好
+ 保存任务的task和模型 key:URL value:@{@"":@""} ps:key只要是惟一的标识符就好
  */
 @property (nonatomic, strong) NSMutableDictionary *downlaodTaskDictionary;
-
-@property (nonatomic, copy) NSString *progress;
 
 @end
 
@@ -145,7 +143,7 @@ static NSString * const kSessionIndentifier = @"download";
             //创建Download目录
             [fileManager createDirectoryAtPath:downloadDir withIntermediateDirectories:YES attributes:nil error:nil];
             //拼接文件路径
-            NSString *filePath = [downloadDir stringByAppendingPathComponent:response.suggestedFilename];
+            NSString *filePath = [downloadDir stringByAppendingPathComponent:model.videoUrl];
             //返回文件位置的URL路径
             return [NSURL fileURLWithPath:filePath];
             
