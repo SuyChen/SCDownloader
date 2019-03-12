@@ -52,29 +52,29 @@ typedef void(^SCHttpProgress)(NSProgress *progress);
  
  @return 网络请求单利
  */
-+ (instancetype _Nullable )sharedInstance;
++ (instancetype)sharedInstance;
 
 /**
- 下载资源
- 
- @param URLString URL地址，不包含baseURL
+ 下载网络资源
+
+ @param requestModel 主要包含（下载的URL地址，恢复下载数据和UI所需要的resumeData, progress, 和status) 
  @param fileDirectory 文件存储目录(默认存储目录为Download)
  @param progress 下载进度
  @param success 请求成功
  @param failure 请求失败
  */
-- (void)downloadWithURLString:(NSString *_Nullable)URLString
-                              fileDirectory:(NSString *)fileDirectory
-                                   progress:(SCHttpProgress)progress
-                                    success:(SCHttpRequestSuccess)success
-                                    failure:(SCHttpRequestFailed)failure;
+- (void)downloadWithRequestModel:(id)requestModel
+            fileDirectory:(NSString *)fileDirectory
+                 progress:(SCHttpProgress)progress
+                  success:(SCHttpRequestSuccess)success
+                  failure:(SCHttpRequestFailed)failure;
 
 /**
  暂停下载
 
  @param URLString 下载的URL
  */
-- (void)suspendWithURLString:(NSString *_Nullable)URLString;
+- (void)suspendWithURLString:(NSString *)URLString;
 @end
 
 NS_ASSUME_NONNULL_END

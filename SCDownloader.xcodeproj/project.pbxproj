@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2094D1C022373E18007D1079 /* SCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2094D1BF22373E18007D1079 /* SCDataModel.m */; };
 		209CE96022362D2A00075F0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE95F22362D2A00075F0D /* AppDelegate.m */; };
 		209CE96322362D2A00075F0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE96222362D2A00075F0D /* ViewController.m */; };
 		209CE96622362D2A00075F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209CE96422362D2A00075F0D /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		209CE9952236351400075F0D /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 209CE9942236351300075F0D /* test.json */; };
 		209CE9992236374300075F0D /* SCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE9972236374300075F0D /* SCTableViewCell.m */; };
 		209CE99A2236374300075F0D /* SCTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 209CE9982236374300075F0D /* SCTableViewCell.xib */; };
-		209CE9A122363D3F00075F0D /* SCDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 209CE9A022363D3F00075F0D /* SCDataModel.m */; };
 		510CA2E63890D062971CD392 /* libPods-SCDownloader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1687EB2F85D1A54718690257 /* libPods-SCDownloader.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		1687EB2F85D1A54718690257 /* libPods-SCDownloader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SCDownloader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2094D1BF22373E18007D1079 /* SCDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDataModel.m; sourceTree = "<group>"; };
 		209CE95B22362D2A00075F0D /* SCDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209CE95E22362D2A00075F0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		209CE95F22362D2A00075F0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 		209CE9972236374300075F0D /* SCTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTableViewCell.m; sourceTree = "<group>"; };
 		209CE9982236374300075F0D /* SCTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCTableViewCell.xib; sourceTree = "<group>"; };
 		209CE99F22363D3F00075F0D /* SCDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDataModel.h; sourceTree = "<group>"; };
-		209CE9A022363D3F00075F0D /* SCDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDataModel.m; sourceTree = "<group>"; };
 		468BE2C7ECA2D43AA8BB07C8 /* Pods-SCDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SCDownloader/Pods-SCDownloader.debug.xcconfig"; sourceTree = "<group>"; };
 		F9BAA3D288979EB730124FB3 /* Pods-SCDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-SCDownloader/Pods-SCDownloader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +166,8 @@
 			children = (
 				209CE99122362E3500075F0D /* SCDownloadHelper.h */,
 				209CE99222362E3500075F0D /* SCDownloadHelper.m */,
+				209CE99F22363D3F00075F0D /* SCDataModel.h */,
+				2094D1BF22373E18007D1079 /* SCDataModel.m */,
 			);
 			path = SCDownloader;
 			sourceTree = "<group>";
@@ -173,8 +175,6 @@
 		209CE99E22363CF300075F0D /* MainClass */ = {
 			isa = PBXGroup;
 			children = (
-				209CE99F22363D3F00075F0D /* SCDataModel.h */,
-				209CE9A022363D3F00075F0D /* SCDataModel.m */,
 				209CE96122362D2A00075F0D /* ViewController.h */,
 				209CE96222362D2A00075F0D /* ViewController.m */,
 				209CE9962236374300075F0D /* SCTableViewCell.h */,
@@ -356,7 +356,7 @@
 				209CE9992236374300075F0D /* SCTableViewCell.m in Sources */,
 				209CE96022362D2A00075F0D /* AppDelegate.m in Sources */,
 				209CE99322362E3500075F0D /* SCDownloadHelper.m in Sources */,
-				209CE9A122363D3F00075F0D /* SCDataModel.m in Sources */,
+				2094D1C022373E18007D1079 /* SCDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

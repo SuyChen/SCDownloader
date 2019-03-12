@@ -25,11 +25,19 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="psI-Sd-sAb"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多任务断点下载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8n7-0H-Xft">
+                                <rect key="frame" x="127" y="40" width="121.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.13725490200000001" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y6i-FE-BTY" secondAttribute="trailing" id="8XS-de-ktc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y6i-FE-BTY" secondAttribute="bottom" id="Cr7-am-w5l"/>
+                            <constraint firstItem="8n7-0H-Xft" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XoJ-DH-hol"/>
+                            <constraint firstItem="8n7-0H-Xft" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="bl6-oD-W8r"/>
                             <constraint firstItem="Y6i-FE-BTY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="kLS-0K-BUO"/>
                             <constraint firstItem="Y6i-FE-BTY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yIz-ih-DG8"/>
                         </constraints>
