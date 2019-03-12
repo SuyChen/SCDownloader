@@ -21,14 +21,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SCDataModel : NSObject
 
-@property (nonatomic, copy) NSString *uid;
-
+/**
+ 请求资源的额URL，这里也作为唯一标识符使用
+ */
 @property (nonatomic, copy) NSString *videoUrl;
 
+/**
+ 下载状态
+ */
 @property (nonatomic, assign) SCDownloadStatus status;
 
+/**
+ 下载进度
+ */
 @property (nonatomic, copy) NSString *progress;
 
+/**
+ 下载数据
+ */
 @property (nonatomic, strong) NSData *resumeData;
 
 @end
